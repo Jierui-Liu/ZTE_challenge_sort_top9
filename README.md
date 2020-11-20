@@ -8,7 +8,7 @@ About 2020 ZTE_challenge_multi-target tracking - top9 Vereary队
 
 + Ubuntu 16.04
 + CUDA 10.1 CUDNN 7.6.4
-+ 1080Ti or V100
++ 1080Ti
 + 内存128G
 
 # 1. 代码结构
