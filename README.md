@@ -2,7 +2,7 @@
 About 2020 ZTE_challenge_multi-target tracking - top9 Vereary队
 
 代码结构
-
+```
 .
 ├── detect_with_mmdet
 │   ├── afterprocess_json.py
@@ -48,5 +48,6 @@ About 2020 ZTE_challenge_multi-target tracking - top9 Vereary队
 │   └── yolov3_deepsort.py
 ├── to_coco.py
 └── to_coco_train.py
+```
 
 部分代码参考了[mmdet](https://github.com/open-mmlab/mmdetection)、[fairmot](https://github.com/ifzhang/FairMOT)、[deepsort](https://github.com/ZQPei/deep_sort_pytorch)
