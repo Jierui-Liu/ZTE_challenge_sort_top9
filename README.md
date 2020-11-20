@@ -5,8 +5,8 @@ About 2020 ZTE_challenge_multi-target tracking - top9 Vereary队
 ```
 .
 ├── detect_with_mmdet
-│   ├── afterprocess_json.py
-│   ├── configs
+│   ├── afterprocess_json.py  //将检测结果转换为跟踪代码的读取格式      
+│   ├── configs
 │   ├── demo
 │   ├── docker
 │   ├── docs
@@ -15,23 +15,23 @@ About 2020 ZTE_challenge_multi-target tracking - top9 Vereary队
 │   ├── pytest.ini
 │   ├── README.md
 │   ├── setup.py
-│   ├── test_Jr3.sh
+│   ├── test_Jr3.sh //检测器推理脚本
 │   ├── tests
 │   ├── tools
-│   ├── train_Jr3_101.sh
-│   └── train_Jr3.sh
+│   ├── train_Jr3_101.sh //检测器训练脚本 
+│   └── train_Jr3.sh //检测器训练脚本
 ├── stage1_fairmot
 │   ├── assets
 │   ├── experiments
 │   ├── outputs
-│   ├── src
+│   ├── src //第一阶段跟踪执行代码 
 │   └── videos
 ├── stage2_deepsort
-│   ├── after_process_B.py
-│   ├── after_process.py
-│   ├── clean_insert_clean_frame.py
-│   ├── clean_insert_frame.py
-│   ├── configs
+│   ├── after_process_B.py //后处理代码v4 
+│   ├── after_process.py //后处理代码v3 
+│   ├── clean_insert_clean_frame.py //后处理代码v2 
+│   ├── clean_insert_frame.py //后处理代码v1 
+│   ├── configs
 │   ├── deep_sort
 │   ├── demo
 │   ├── detector
@@ -42,12 +42,14 @@ About 2020 ZTE_challenge_multi-target tracking - top9 Vereary队
 │   ├── to_SST.py
 │   ├── transform
 │   ├── utils
-│   ├── yolov3_deepsort_mycrop_ensembledet_more.py
-│   ├── yolov3_deepsort_mycrop_ensembledet.py
-│   ├── yolov3_deepsort_mycrop_ite.py
-│   └── yolov3_deepsort.py
+│   ├── yolov3_deepsort_mycrop_ensembledet_more.py //deepsort迭代式跟踪代码v3 
+│   ├── yolov3_deepsort_mycrop_ensembledet.py //deepsort迭代式跟踪代码v2
+│   ├── yolov3_deepsort_mycrop_ite.py //deepsort迭代式跟踪代码v1
+│   └── yolov3_deepsort.py //deepsort初始跟踪代码 
 ├── to_coco.py
 └── to_coco_train.py
 ```
+
+
 
 部分代码参考了[mmdet](https://github.com/open-mmlab/mmdetection)、[fairmot](https://github.com/ifzhang/FairMOT)、[deepsort](https://github.com/ZQPei/deep_sort_pytorch)
